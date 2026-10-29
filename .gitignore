@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.data/
+.cache/
+*.log
+.DS_Store
+coverage/
+/.crowl/
+.playground/
+/.release-private/
+/releases/

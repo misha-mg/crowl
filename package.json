@@ -1,0 +1,32 @@
+{
+  "name": "crowl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable project-local Telegram bridge for Claude Code and Codex on macOS",
+  "engines": { "node": ">=24.0.0 <25" },
+  "scripts": {
+    "start": "node src/main.ts",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts",
+    "doctor": "node src/cli.ts doctor",
+    "telegram:id": "node scripts/telegram-id.ts",
+    "probe": "node scripts/probe.ts",
+    "smoke": "node scripts/smoke.ts",
+    "voice:setup": "node src/cli.ts voice-setup",
+    "service:install": "node src/cli.ts service-install",
+    "service:uninstall": "node src/cli.ts service-uninstall",
+    "service:status": "node src/cli.ts service-status",
+    "service:start": "node src/cli.ts service-start",
+    "service:stop": "node src/cli.ts service-stop",
+    "service:restart": "node src/cli.ts service-restart",
+    "service:print": "node src/cli.ts service-print",
+    "setup:exclude": "node src/cli.ts exclude",
+    "backup": "node src/cli.ts backup",
+    "project:add": "node scripts/project-setup.ts",
+    "app:version": "node src/cli.ts version",
+    "outbox:status": "node src/cli.ts outbox-status",
+    "outbox:retry": "node src/cli.ts outbox-retry"
+  },
+  "devDependencies": { "@types/node": "22.20.5", "typescript": "5.9.3" }
+}
